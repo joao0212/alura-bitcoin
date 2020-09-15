@@ -4,7 +4,7 @@ CREATE TABLE `bitcoin` (
   `tipo` varchar(50) NOT NULL,
   `data` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB;
 
 INSERT INTO bitcoin (preco, tipo, data) VALUES (58.55,'VENDA',NOW());
 INSERT INTO bitcoin (preco, tipo, data) VALUES (58.55,'VENDA',NOW());
