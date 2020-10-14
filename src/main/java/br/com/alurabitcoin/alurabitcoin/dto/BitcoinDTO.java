@@ -4,6 +4,10 @@ import java.time.LocalDate;
 
 public class BitcoinDTO {
 
+	public BitcoinDTO() {
+
+	}
+
 	public BitcoinDTO(Long id, Double preco, String tipo, LocalDate data) {
 		this.id = id;
 		this.preco = preco;
@@ -23,6 +27,18 @@ public class BitcoinDTO {
 		return id;
 	}
 
+	public void setPreco(Double preco) {
+		this.preco = preco;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setData(LocalDate data) {
+		this.data = data;
+	}
+
 	public Double getPreco() {
 		return preco;
 	}
@@ -34,5 +50,4 @@ public class BitcoinDTO {
 	public LocalDate getData() {
 		return data;
 	}
-
 }

@@ -14,6 +14,17 @@ import br.com.alurabitcoin.alurabitcoin.enums.Tipo;
 @Entity
 public class Bitcoin {
 
+	public Bitcoin() {
+
+	}
+
+	public Bitcoin(Double preco, Tipo tipo, LocalDate data) {
+		super();
+		this.preco = preco;
+		this.tipo = tipo;
+		this.data = data;
+	}
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
